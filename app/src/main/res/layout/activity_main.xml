@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textviewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Tên bài hát"
+        android:textColor="#fff"
+        android:textSize="24dp" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonPrev"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="100dp"
+        android:background="@null"
+        android:src="@drawable/prev" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonPlay"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/ImageButtonPrev"
+        android:layout_toRightOf="@+id/ImageButtonPrev"
+        android:background="@null"
+        android:src="@drawable/play" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonStop"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/ImageButtonPlay"
+        android:layout_toRightOf="@+id/ImageButtonPlay"
+        android:background="@null"
+        android:src="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonNext"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/ImageButtonStop"
+        android:layout_toRightOf="@+id/ImageButtonStop"
+        android:background="@null"
+        android:src="@drawable/next" />
+
+    <SeekBar
+        android:id="@+id/seekBarSong"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@id/ImageButtonPrev"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/textviewTimeSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBarSong"
+        android:layout_alignStart="@id/seekBarSong"
+        android:layout_alignLeft="@id/seekBarSong"
+        android:layout_marginBottom="12dp"
+        android:text="00:00"
+        android:textColor="#3F51B5"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textviewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBarSong"
+        android:layout_alignStart="@id/seekBarSong"
+        android:layout_alignLeft="@id/seekBarSong"
+        android:layout_marginStart="343dp"
+        android:layout_marginLeft="343dp"
+        android:layout_marginBottom="7dp"
+        android:text="00:00"
+        android:textColor="#3F51B5"
+        android:textSize="20dp" />
+
+</RelativeLayout>
